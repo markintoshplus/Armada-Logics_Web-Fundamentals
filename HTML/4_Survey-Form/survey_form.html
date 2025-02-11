@@ -5,9 +5,44 @@
     </head>
     <body>
         <h1>Survey Form</h1>
-        <label for="fullname">Full Name: </label>
-        <input type="text" id="fullname" name="fullname">
-        <label for="email">Email Address: </label>
-        <input type="email" id="email" name="email">
+        <form>
+            <label for="fullname">Full Name: </label>
+            <input type="text" id="fullname" name="fullname"><br><br>
+            <label for="email">Email Address: </label>
+            <input type="email" id="email" name="email"><br><br>
+
+            <label for="experience">How satisfied are you with our service?</label>
+            <input type="radio" id="experience" name="experience" value="very_satisfied">
+            <label for="very_satisfied">Very Satisfied</label>
+            <input type="radio" id="experience" name="experience" value="satisfied">
+            <label for="satisfied">Satisfied</label>
+            <input type="radio" id="experience" name="experience" value="neutral">
+            <label for="neutral">Neutral</label>
+            <input type="radio" id="experience" name="experience" value="dissatisfied">
+            <label for="dissatisfied">Dissatisfied</label>
+            <input type="radio" id="experience" name="experience" value="very_dissatisfied">
+            <label for="very_dissatisfied">Very Dissatisfied</label> <br><br>
+
+            <label for="features">What features do you value most?</label><br>
+            <input type="checkbox" id="feature1" name="features" value="feature1">
+            <label for="feature1">Feature 1</label><br>
+            <input type="checkbox" id="feature2" name="features" value="feature2">
+            <label for="feature2">Feature 2</label><br>
+            <input type="checkbox" id="feature3" name="features" value="feature3">
+            <label for="feature3">Feature 3</label><br><br>
+
+            <label for="role">What best describes you?</label>
+            <select id="role" name="role">
+                <option value="student">Student</option>
+                <option value="professional">Professional</option>
+                <option value="hobbyist">Hobbyist</option>
+                <option value="other">Other</option>
+            </select><br><br>       
+            
+            <label for="comments">Additional comments or suggestions?</label>
+            <textarea id="comments" name="comments"></textarea><br><br>
+
+            <button type="submit">Submit</button>
+        </form>
     </body>
 </html>
