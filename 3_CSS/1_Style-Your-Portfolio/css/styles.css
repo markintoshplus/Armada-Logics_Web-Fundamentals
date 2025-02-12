@@ -1,0 +1,38 @@
+html {
+    background-color: #faebd7;
+    font-family: 'Trebuchet MS';
+    padding: 5%;
+}
+
+h1 {
+    background-color: burlywood;
+    color: #8b0000;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+table.styled-table {
+    width: 100%;
+    height: 200px;
+}
+
+table.styled-table td, table.styled-table th {
+    border: 3px solid #AAAAAA;
+    padding: 5px 5px;
+}
+
+table.styled-table tbody td {
+    color: #8B0000;
+}
+
+table.styled-table thead {
+    background: #8B0000;
+}
+
+table.styled-table thead th {
+    font-size: 20px;
+    font-weight: bold;
+    color: #faebd7;
+    text-align: center;
+}
+
