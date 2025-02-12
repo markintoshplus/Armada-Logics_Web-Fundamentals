@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>My Portfolio</title>
+    </head>
+
+    <body>
+        <header>
+            <h1>My Portfolio</h1>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="#">About Me</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <section>
+                <h2>About Me</h2>
+                <p>Hello there! I'm Mark Cedrick De Vera, an aspiring web developer passionate about crafting clean, functional, and user-friendly websites. I enjoy exploring modern web technologies and continuously improving my skills in front-end and back-end development.</p>
+                <p>This portfolio showcases my projects, skills, and experience as I grow in the field of web development. Feel free to explore my work and reach out if you'd like to collaborate!</p>
+                <img src="../images/img1.jpg" alt="A placeholder image for my portfolio">
+            </section>
+
+            <section>
+                <h2>My Projects</h2>
+                <table>
+                    <tr>
+                        <th>Project</th>
+                        <th>Description</th>
+                        <th>Year</th>
+                    </tr>
+                    <tr>
+                        <td>URecyCle</td>
+                        <td>A CNN-based mobile application for monitoring student waste at University of Cabuyao. The app utilizes a CNN algorithm that can perform image classification to classify the wastes that students dispose.</td>
+                        <td>2024</td>
+                    </tr>
+                    <tr>
+                        <td>Tic-Tac-Toe</td>
+                        <td>A graphical Tic-Tac-Toe game where a human player competes against an AI player using the Minimax algorithm.</td>
+                        <td>2024</td>
+                    </tr>
+                    <tr>
+                        <td>Inventory Manager</td>
+                        <td>An inventory manager converted into a Python package.</td>
+                        <td>2024</td>
+                    </tr>
+                </table>
+            </section>
+
+            <section>
+                <h2>Contact Me</h2>
+                <form>
+                    <p>
+                        <label for="fullname">Full Name: </label>
+                        <input type="text" id="fullname" name="fullname">
+                    </p>
+                    <p>
+                        <label for="email">Email Address: </label>
+                        <input type="email" id="email" name="email">
+                    </p>
+                    
+                    <fieldset>
+                        <legend>How did you hear about this portfolio?</legend>
+                        <div>
+                          <input type="radio" id="friend" name="source" value="friend">
+                          <label for="friend">Friend</label>
+                        </div>
+                        <div>
+                          <input type="radio" id="social_media" name="source" value="social-media">
+                          <label for="social_media">Social Media</label>
+                        </div>
+                        <div>
+                          <input type="radio" id="search_engine" name="source" value="search_engine">
+                          <label for="search_engine">Search Engine</label>
+                        </div>
+                        <div>
+                          <input type="radio" id="other_source" name="source" value="other_source">
+                          <label for="other_source">Other</label>
+                        </div>
+                      </fieldset>
+                    
+                    <fieldset>
+                        <legend>Skills/Interests</legend>
+                        <div>
+                            <input type="checkbox" id="web_development" name="skills" value="web_development">
+                            <label for="web_development">Web Development</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="design" name="skills" value="design">
+                            <label for="design">Design</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="photography" name="skills" value="photography">
+                            <label for="photography">Photography</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="video_editing" name="skills" value="video_editing">
+                            <label for="video_editing">Video Editing</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="other_skill" name="skills" value="other_skill">
+                            <label for="other_skill">Other</label>
+                        </div>
+                    </fieldset>
+                    
+                    <label for="message">Comments or Messages</label><br/>
+                    <textarea id="message" name="message"></textarea><br/>
+                    
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Mark Cedrick De Vera. All rights reserved.</p>
+        </footer>
+    </body>
+</html>
