@@ -54,36 +54,62 @@
             <section>
                 <h2>Contact Me</h2>
                 <form>
-                    <label for="fullname">Full Name: </label>
-                    <input type="text" id="fullname" name="fullname"><br>
-                    <label for="email">Email Address: </label>
-                    <input type="email" id="email" name="email"><br><br>
-            
-                    <label>How did you hear about this portfolio?</label><br>
-                    <input type="radio" id="friend" name="source" value="friend">
-                    <label for="friend">Friend</label><br>
-                    <input type="radio" id="social_media" name="source" value="social-media">
-                    <label for="social_media">Social Media</label><br>
-                    <input type="radio" id="search_engine" name="source" value="search_engine">
-                    <label for="search_engine">Search Engine</label><br>
-                    <input type="radio" id="other_source" name="source" value="other_source">
-                    <label for="other_source">Other</label><br><br>
+                    <p>
+                        <label for="fullname">Full Name: </label>
+                        <input type="text" id="fullname" name="fullname">
+                    </p>
+                    <p>
+                        <label for="email">Email Address: </label>
+                        <input type="email" id="email" name="email">
+                    </p>
                     
-                    <label>Skills/Interests</label><br>
-                    <input type="checkbox" id="web_development" name="skills" value="web_development">
-                    <label for="web_development">Web Development</label><br>
-                    <input type="checkbox" id="design" name="skills" value="design">
-                    <label for="design">Design</label><br>
-                    <input type="checkbox" id="photography" name="skills" value="photography">
-                    <label for="photography">Photography</label><br>
-                    <input type="checkbox" id="video_editing" name="skills" value="video_editing">
-                    <label for="video_editing">Video Editing</label><br>
-                    <input type="checkbox" id="other_skill" name="skills" value="other_skill">
-                    <label for="other_skill">Other</label><br><br>
-
-                    <label for="message">Comments or Messages</label><br>
-                    <textarea id="message" name="message"></textarea><br><br>
-
+                    <fieldset>
+                        <legend>How did you hear about this portfolio?</legend>
+                        <div>
+                          <input type="radio" id="friend" name="source" value="friend">
+                          <label for="friend">Friend</label>
+                        </div>
+                        <div>
+                          <input type="radio" id="social_media" name="source" value="social-media">
+                          <label for="social_media">Social Media</label>
+                        </div>
+                        <div>
+                          <input type="radio" id="search_engine" name="source" value="search_engine">
+                          <label for="search_engine">Search Engine</label>
+                        </div>
+                        <div>
+                          <input type="radio" id="other_source" name="source" value="other_source">
+                          <label for="other_source">Other</label>
+                        </div>
+                      </fieldset>
+                    
+                    <fieldset>
+                        <legend>Skills/Interests</legend>
+                        <div>
+                            <input type="checkbox" id="web_development" name="skills" value="web_development">
+                            <label for="web_development">Web Development</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="design" name="skills" value="design">
+                            <label for="design">Design</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="photography" name="skills" value="photography">
+                            <label for="photography">Photography</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="video_editing" name="skills" value="video_editing">
+                            <label for="video_editing">Video Editing</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="other_skill" name="skills" value="other_skill">
+                            <label for="other_skill">Other</label>
+                        </div>
+                    </fieldset>
+                    
+                    <label for="message">Comments or Messages</label><br/>
+                    <textarea id="message" name="message"></textarea><br/>
+                    
                     <button type="submit">Submit</button>
                 </form>
             </section>
