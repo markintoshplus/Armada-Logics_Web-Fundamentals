@@ -9,43 +9,75 @@
 
     <body>
         <header>
-            <div class="logo">LOGO</div>
             <nav>
+                <div id="small-logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-bootstrap-fill" viewBox="0 0 16 16">
+                        <path d="M6.375 7.125V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23zm0 3.762h1.898c1.184 0 1.81-.48 1.81-1.377 0-.885-.65-1.348-1.886-1.348H6.375z"/>
+                        <path d="M4.002 0a4 4 0 0 0-4 4v8a4 4 0 0 0 4 4h8a4 4 0 0 0 4-4V4a4 4 0 0 0-4-4zm1.06 12V3.545h3.399c1.587 0 2.543.809 2.543 2.11 0 .884-.65 1.675-1.483 1.816v.1c1.143.117 1.904.931 1.904 2.033 0 1.488-1.084 2.396-2.888 2.396z"/>
+                    </svg>
+                </div>
+
                 <ul>
                     <li><a href="#">Docs</a></li>
                     <li><a href="#">Examples</a></li>
                     <li><a href="#">Icons</a></li>
                     <li><a href="#">Themes</a></li>
                     <li><a href="#">Blog</a></li>
-                </ul>
+                </ul>  
+
                 <form action="#">
-                    <input type="text" placeholder="Search">
+                    <div class="search-container">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                        </svg>
+                        <input type="text" placeholder="Search">
+                    </div>
+                </form>
             </nav>
         </header>
         <main>
             <section class="hero">
-                <div class="big-logo">LOGO</div>
+                <img id="big-logo" src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo-shadow.png" alt="Bootstrap logo">
 
                 <h1>Build fast, responsive sites with Bootstrap</h1>
                 
-                <p>Powerful, extensible, and feature-packed frontend toolkit. 
+                <p id="hero-text">Powerful, extensible, and feature-packed frontend toolkit. 
                     Build and customize with Sass, utilize prebuilt grid system and components, 
                     and bring projects to life with powerful JavaScript plugins</p>
+                
                 
                 <div class="code-snippet"> 
                     $ npm i bootstrap@5.3.3
                 </div>
     
-                <button class="read-the-docs">Read the Docs</button>
+                <a class="read-the-docs-btn" href="https://getbootstrap.com/docs/5.3/getting-started/introduction/">Read the Docs</a>
+
+                <p class="version-info">
+                    Currently <span class="version-number">v5.3.3</span>
+                    <span class="separator">·</span>
+                    <a class="download-lnk" href="https://getbootstrap.com/docs/5.3/getting-started/download/">Download</a>
+                    <span class="separator">·</span>
+                    <a class="all-versions-lnk" href="https://getbootstrap.com/docs/versions/">All versions</a>
+                </p>
             </section>
 
             <section class="get-started">
-                <div class="code-logo">LOGO</div>
+                <div class="code-logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="#702BF6" class="bi bi-code" viewBox="0 0 16 16">
+                        <path d="M5.854 4.854a.5.5 0 1 0-.708-.708l-3.5 3.5a.5.5 0 0 0 0 .708l3.5 3.5a.5.5 0 0 0 .708-.708L2.707 8zm4.292 0a.5.5 0 0 1 .708-.708l3.5 3.5a.5.5 0 0 1 0 .708l-3.5 3.5a.5.5 0 0 1-.708-.708L13.293 8z"/>
+                      </svg>
+                </div>
+
                 <h2>Get started any way you want</h2>
-                <p>Jump right into building with Bootstrap-use the CDN, install it via package manager, or download the source code.</p>
-                <a href="#">Read installation docs -></a>
+                
+                <p class="get-started-txt">Jump right into building with Bootstrap&mdash;use the CDN, install it via package manager, or download the source code.</p>
+                <a class="read-the-docs-lnk" href="https://getbootstrap.com/docs/5.3/getting-started/download/">Read installation docs 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                  </svg>
+                </a>
+                
             </section>
-            
         </main>
     </body>
 </html>
