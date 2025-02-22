@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Netflix</title>
-</html>
+</head>
 
 <body>
     <header>
         <img class="logo" src="assets/logo.png" alt="Netflix Logo">
-        <select name="language" id="language">
+        <select name="language" id="language-select">
             <option value="en">English</option>
             <option value="es">Español</option>
             <option value="ph">Filipino</option>
@@ -21,41 +22,60 @@
 
     <main>
         <section class="hero">
+            <img class="background" src="assets/background.jpg" alt="Background Photo">
             <div class="hero-text">
                 <h1>Unlimited movies, TV shows, and more.</h1>
                 <p>Starts at &#8369;149. Cancel anytime.</p>
-                <p>Ready to watch? Enter your email to create or restart your membership.</p>
-                <form class="cta">
+                <form class="email-form">
+                    <p>Ready to watch? Enter your email to create or restart your membership.</p>
                     <input type="email" placeholder="Email address">
-                    <button>Get Started</button>
+                    <button>Get Started <svg xmlns="http://www.w3.org/2000/svg" fill="none" role="img"
+                            viewBox="0 0 24 24" width="24" height="24" data-icon="ChevronRightStandard"
+                            aria-hidden="true">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M15.5859 12L8.29303 19.2928L9.70725 20.7071L17.7072 12.7071C17.8948 12.5195 18.0001 12.2652 18.0001 12C18.0001 11.7347 17.8948 11.4804 17.7072 11.2928L9.70724 3.29285L8.29303 4.70706L15.5859 12Z"
+                                fill="currentColor"></path>
+                        </svg>
+                    </button>
                 </form>
             </div>
         </section>
 
         <section class="trending">
             <h2>Trending Now</h2>
-            <ul class="trending-container">
-                <li>
-                    <img src="assets/trending1.webp" alt="Trending 1">
-                </li>
-                <li>
-                    <img src="assets/trending2.webp" alt="Trending 2">
-                </li>
-                <li>
-                    <img src="assets/trending3.webp" alt="Trending 3">
-                </li>
-                <li>
-                    <img src="assets/trending4.webp" alt="Trending 4">
-                </li>
-                <li>
-                    <img src="assets/trending5.webp" alt="Trending 4">
-                </li>
-            </ul>
+            <div class="trending-wrapper">
+                <ul class="trending-list">
+                    <li>
+                        <img src="assets/trending1.webp" alt="Trending 1">
+                    </li>
+                    <li>
+                        <img src="assets/trending2.webp" alt="Trending 2">
+                    </li>
+                    <li>
+                        <img src="assets/trending3.webp" alt="Trending 3">
+                    </li>
+                    <li>
+                        <img src="assets/trending4.webp" alt="Trending 4">
+                    </li>
+                    <li>
+                        <img src="assets/trending5.webp" alt="Trending 4">
+                    </li>
+                </ul>
+                <button class="next-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" role="img" viewBox="0 0 24 24" width="24"
+                        height="24" data-icon="ChevronRightStandard" aria-hidden="true">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M15.5859 12L8.29303 19.2928L9.70725 20.7071L17.7072 12.7071C17.8948 12.5195 18.0001 12.2652 18.0001 12C18.0001 11.7347 17.8948 11.4804 17.7072 11.2928L9.70724 3.29285L8.29303 4.70706L15.5859 12Z"
+                            fill="currentColor"></path>
+                    </svg>
+                </button>
+            </div>
+
         </section>
 
-        <section class="features">
+        <section class="reasons-to-join">
             <h2>More Reasons to Join</h2>
-            <ul>
+            <ul class="reason-cards">
                 <li>
                     <h2>Enjoy on your TV</h2>
                     <p>Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</p>
@@ -70,18 +90,26 @@
                 </li>
                 <li>
                     <h2>Create profiles for kids.</h2>
-                    <p>Send kids on adventures with their favorite characters in a space made just for them—free with your membership.</p>
+                    <p>Send kids on adventures with their favorite characters in a space made just for them—free with
+                        your membership.</p>
                 </li>
             </ul>
         </section>
 
         <footer>
             <p>Ready to watch? Enter your email to create or restart your membership.</p>
-            <form class="cta-footer">
+            <form class="email-form">
                 <input type="email" placeholder="Email address">
-                <button>Get Started</button>
+                <button>Get Started <svg xmlns="http://www.w3.org/2000/svg" fill="none" role="img" viewBox="0 0 24 24"
+                        width="24" height="24" data-icon="ChevronRightStandard" aria-hidden="true">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M15.5859 12L8.29303 19.2928L9.70725 20.7071L17.7072 12.7071C17.8948 12.5195 18.0001 12.2652 18.0001 12C18.0001 11.7347 17.8948 11.4804 17.7072 11.2928L9.70724 3.29285L8.29303 4.70706L15.5859 12Z"
+                            fill="currentColor"></path>
+                    </svg>
+                </button>
             </form>
         </footer>
     </main>
 </body>
 
+</html>

@@ -1,24 +1,22 @@
 * {
-    outline: dotted 1px red;
+    /* outline: dotted 1px red; */
 }
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #141414;
-    background-image: url(assets/background.jpg) ;
-    background-repeat: no-repeat;
-    box-shadow: inset 0 0 10em 5em #000;
+    background-color: black;
     color: #fff;
     margin: 0;
     padding: 0;
+    
 }
 
     header {
         display: flex;
         justify-content: space-between;
-        height: 120px;
         align-items: center;
-        padding: 0 148px;
+        height: 100px;
+        padding: 0 350px;
         background-color: transparent;
     }
 
@@ -26,20 +24,169 @@ body {
             width: 200px;
         }
 
+        header select, header .login-btn{
+            border-radius: 6px;
+        }
+
         header select {
             background-color: #131618;
             color: #fff;
-            border: none;
             font-size: 16px;
-            padding: 8px;
-            border-radius: 4px;
+            padding: 5px 25px 5px 25px;
+            margin-left: auto;
+            border: 1px solid #4B4B4B;
         }
 
         header .login-btn {
             background-color: #C11119;
             color: white;
             text-decoration: none;
-            padding: 8px;
+            font-size: 15px;
+            padding: 6px 16px;
             margin-left: 12px;
         }
 
+        .hero {
+            height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 310px;
+        }
+
+        .hero::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            height: 1125px;
+            pointer-events: none;
+            background: linear-gradient(0deg, rgba(0,0,0,0.710504270067402) 90%, rgba(0,0,0,1) 100%);
+            z-index: -1;
+        }
+
+            .background {
+                position: absolute;
+                inset: 0;
+                object-fit: cover;
+                z-index: -1;
+            }
+
+            .hero-text {
+                padding: 50px;
+                max-width: 700px;
+                text-align: center;
+            }
+
+                .hero-text h1,
+                .hero-text p {
+                    margin-bottom: 20px;
+                }
+
+                .hero-text h1 {
+                    font-size: 56px;
+                    font-weight: 900;
+                }
+
+                .hero-text p {
+                    font-size: 20px;
+                }
+
+                .email-form {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    gap: 10px;
+                }
+
+                .email-form p {
+                    font-size: 16px;
+                    padding: 0px 10px;
+                    margin-bottom: 10px;
+                }
+
+                .email-form input[type="email"] {
+                    font-size: 16px;
+                    padding: 16px 20px;
+                    width: 350px;
+                    background-color: rgba(27, 27, 27, 0.459);
+                    border: 1px solid #4B4B4B;
+                    border-radius: 2px;
+                    color: white;
+                }
+
+                .email-form button {
+                    background-color: #e50914;
+                    color: white;
+                    padding: 12px 20px;
+                    width: 200px;
+                    border: none;
+                    border-radius: 2px;
+                    font-size: 24px;
+                    cursor: pointer;
+                }
+
+        .trending {
+            margin: 0px 300px;
+            padding: 50px 20px;
+        }
+
+            .trending h2 {
+                padding-top: 10px;
+            }
+
+            .trending-wrapper {
+                display: flex;
+                gap: 20px;
+                align-items: center;
+            }
+                .trending-list {
+                    display: flex;
+                    justify-content: center;
+                    list-style: none;
+                    gap: 50px;
+                }
+    
+                    .trending-container li img {
+                        border-radius: 10px;
+                    }
+
+                .trending-wrapper .next-btn {
+                    background-color: #1A1A1A;
+                    border: none;
+                    padding: 0;
+                    width: 24px;
+                    height: 120px;
+                    color: white;
+                    border-radius: 10px;
+                    cursor: pointer;
+                }
+
+        .reasons-to-join {
+            margin: 0px 300px;
+            padding: 0px 20px;
+        }
+
+            .reason-cards {
+                display: flex;
+                gap: 20px;
+                align-items: center;
+                list-style: none;
+            }
+
+                .reason-cards li {
+                    background-color: #192247;
+                    padding: 5px 15px;
+                    max-width: 250px;
+                    min-height: 300px;
+                    border-radius: 20px;
+                }
+
+        footer {
+            margin: 110px auto;
+            text-align: center;
+        }
+
+            footer .email-form input[type="email"] {
+                width: 500px;
+            }
