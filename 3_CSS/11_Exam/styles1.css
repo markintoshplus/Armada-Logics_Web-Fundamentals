@@ -1,0 +1,282 @@
+/* ------------------------- */
+/*      GLOBAL / DESKTOP     */
+/* ------------------------- */
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: #002056;
+    padding: 25px 150px;
+    gap: 10px;
+    justify-content: center;
+}
+
+.logo {
+    width: 170px;
+    height: 50px;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    margin: 0 50px 0 90px;
+}
+
+.searchbar {
+    border: none;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    min-width: 500px;
+    flex: 1;
+    padding: 12px 13px;
+}
+
+.search-btn {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    width: 21px;
+    height: 21px;
+    background-color: #F17D21;
+    padding: 10px;
+}
+
+.login-btn {
+    margin-right: 50px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.cart-btn {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    margin-right: 50px;
+}
+
+svg {
+    padding-right: 20px;
+}
+
+.contact-btn {
+    text-decoration: none;
+    color: #fff;
+}
+
+main {
+    display: block;
+}
+
+.main-nav-bar {
+    margin-left: 80px;
+}
+
+.main-nav-links {
+    display: flex;
+    list-style: none;
+    gap: 50px;
+}
+
+li a {
+    font-size: 14px;
+    font-weight: normal;
+    color: rgb(58, 42, 47);
+    text-decoration: none;
+}
+
+.hero-section .hero-img {
+    width: 100%;
+}
+
+.categories-section {
+    margin: 100px;
+}
+
+h1 {
+    font-weight: normal;
+}
+
+.categories-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+li {
+    /* Applies to both categories & exclusive items by default */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    font-weight: bold;
+}
+
+.category-img {
+    border-radius: 50%;
+    max-width: 100%;
+}
+
+.category-name {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.exclusive-section {
+    margin: 100px;
+}
+
+.exclusive-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.brand-name {
+    font-weight: normal;
+}
+
+.model-name {
+    font-weight: bold;
+}
+
+.price {
+    display: flex;
+    margin: 0;
+    text-align: left;
+}
+
+.price-info .price {
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.price-info .past-price {
+    color: #AAAAAA;
+    font-weight: normal;
+    text-decoration: line-through;
+    margin: 5px 0 0 0;
+}
+
+.discount {
+    color: red;
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+.exclusive-img {
+    max-width: 100%;
+}
+
+.services {
+    margin: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.service-container {
+    display: flex;
+}
+
+.service-icon {
+    width: 50px;
+    height: 50px;
+    padding-top: 25px;
+    padding-right: 25px;
+}
+
+.text-wrapper {
+    max-width: 250px;
+}
+
+footer {
+    background-color: #333232;
+}
+
+.footer-txt {
+    font-size: 12px;
+    text-align: center;
+    color: #fff;
+    padding: 40px;
+    margin: 0;
+}
+
+/* ---------------------------------- */
+/*      TABLET MEDIA QUERY (<=1024)   */
+/* ---------------------------------- */
+
+@media (max-width: 1024px) {
+    /* 1) Hide entire main nav bar */
+    .main-nav-bar {
+        display: none;
+    }
+
+    /* 2) In header, only show logo, search, and contact; hide login & cart */
+    .login-btn,
+    .cart-btn {
+        display: none;
+    }
+
+    header {
+        padding: 20px 50px;
+    }
+
+    .search {
+        /* Reduce margins so search bar fits better */
+        margin: 0 20px 0 40px;
+    }
+
+    .searchbar {
+        min-width: auto;
+        width: 100%;
+    }
+
+    /* 3) Categories: remain 6 in one row, just shrink images a bit */
+    .categories-list {
+        flex-wrap: nowrap; /* keep them in one row */
+        gap: 15px;
+    }
+    .category-img {
+        /* Shrink the category icons so all 6 can fit horizontally */
+        width: 80px;
+        height: 80px;
+    }
+
+    /* 4) Exclusive: become a 3x2 grid */
+    .exclusive-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, auto);
+        gap: 30px;
+        justify-items: center;
+    }
+
+    /* 5) Services: 2 columns x 2 rows
+       Delivery (#1) & Customer Support (#3) in first column,
+       Secured Payment (#2) in second column, row 1 only */
+    .services {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        gap: 20px;
+        margin: 100px; /* can adjust if you want less margin on tablet */
+    }
+    .service-container:nth-child(1) { /* Delivery */
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .service-container:nth-child(2) { /* Secured Payment */
+        grid-column: 2;
+        grid-row: 1;
+    }
+    .service-container:nth-child(3) { /* Customer Support */
+        grid-column: 1;
+        grid-row: 2;
+    }
+}
