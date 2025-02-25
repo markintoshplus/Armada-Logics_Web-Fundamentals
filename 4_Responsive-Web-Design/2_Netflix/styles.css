@@ -1,76 +1,88 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: black;
-    color: #fff;
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+  }
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
     header {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        height: 100px;
-        padding: 0 350px;
-        background-color: transparent;
+        padding: 20px 40px;
+        background: transparent;
     }
-
-        header .logo {
-            width: 200px;
+    
+        .logo {
+            width: 180px;
         }
-
-        header select, header .login-btn{
-            border-radius: 6px;
+        
+        .header-interact {
+            display: flex;
+            align-items: center;
         }
-
-        header select {
-            background-color: #131618;
-            color: #fff;
-            font-size: 16px;
-            padding: 5px 25px 5px 25px;
-            margin-left: auto;
-            border: 1px solid #4B4B4B;
-        }
-
-        header .login-btn {
-            background-color: #C11119;
-            color: white;
-            text-decoration: none;
-            font-size: 15px;
-            padding: 6px 16px;
-            margin-left: 12px;
-        }
+        
+            #language-select {
+                background-color: #131618;
+                color: #fff;
+                font-size: 16px;
+                padding: 5px 25px;
+                margin-right: 12px;
+                border: 1px solid #4B4B4B;
+                border-radius: 6px;
+            }
+            
+            .login-btn {
+                background-color: #C11119;
+                color: #fff;
+                text-decoration: none;
+                font-size: 15px;
+                padding: 6px 16px;
+                border-radius: 6px;
+            }
 
         .hero {
-            height: 70vh;
+            position: relative;
+            min-height: 80vh;
             display: flex;
             align-items: center;
             justify-content: center;
-            margin-bottom: 310px;
+            text-align: center;
+            margin-bottom: 50px;
         }
+
+        .background {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+          }
 
         .hero::after {
             content: "";
             position: absolute;
             inset: 0;
-            height: 1125px;
             pointer-events: none;
             background: linear-gradient(0deg, rgba(0,0,0,0.710504270067402) 90%, rgba(0,0,0,1) 100%);
             z-index: -1;
         }
 
-            .background {
-                position: absolute;
-                inset: 0;
-                object-fit: cover;
-                z-index: -1;
-            }
-
             .hero-text {
-                padding: 50px;
                 max-width: 700px;
-                text-align: center;
+                padding: 40px;
             }
 
                 .hero-text h1,
@@ -79,12 +91,12 @@ body {
                 }
 
                 .hero-text h1 {
-                    font-size: 56px;
+                    font-size: 3rem;
                     font-weight: 900;
                 }
 
                 .hero-text p {
-                    font-size: 20px;
+                    font-size: 1.5rem;
                 }
 
                 .email-form {
@@ -96,9 +108,7 @@ body {
                 }
 
                 .email-form p {
-                    font-size: 16px;
-                    padding: 0px 10px;
-                    margin-bottom: 10px;
+                    font-size: 1rem;
                 }
 
                 .email-form input[type="email"] {
@@ -111,7 +121,8 @@ body {
                     color: white;
                 }
 
-                .email-form button {
+                .email-form a {
+                    text-decoration: none;
                     background-color: #e50914;
                     color: white;
                     padding: 12px 20px;
@@ -123,12 +134,11 @@ body {
                 }
 
         .trending {
-            margin: 0px 300px;
-            padding: 50px 20px;
+            padding: 20px 40px;
         }
 
             .trending h2 {
-                padding-top: 10px;
+                margin-bottom: 20px;
             }
 
             .trending-wrapper {
@@ -138,12 +148,12 @@ body {
             }
                 .trending-list {
                     display: flex;
-                    justify-content: center;
                     list-style: none;
                     gap: 50px;
                 }
     
-                    .trending-container li img {
+                    .trending-list li img {
+                        width: 180px;
                         border-radius: 10px;
                     }
 
@@ -159,30 +169,188 @@ body {
                 }
 
         .reasons-to-join {
-            margin: 0px 300px;
-            padding: 0px 20px;
+            padding: 20px 40px;
         }
+
+            .reasons-to-join h2 {
+                margin-bottom: 20px;
+            }
 
             .reason-cards {
                 display: flex;
+                justify-content: center;
                 gap: 20px;
-                align-items: center;
                 list-style: none;
+                flex-wrap: wrap;
             }
 
                 .reason-cards li {
                     background-color: #192247;
-                    padding: 5px 15px;
-                    max-width: 250px;
-                    min-height: 300px;
+                    padding: 20px;
                     border-radius: 20px;
+                    max-width: 250px;
+                    flex: 1;
                 }
 
+                    .reason-cards li h3 {
+                        margin-bottom: 20px;
+                    }
+
+                    .reason-cards li p {
+                        margin-bottom: 150px;
+                    }
+
         footer {
-            margin: 110px auto;
             text-align: center;
+            padding: 40px 20px;
         }
+
+            footer p {
+                margin-bottom: 20px;
+            }
 
             footer .email-form input[type="email"] {
                 width: 500px;
             }
+
+
+@media screen and (min-width: 481px) and (max-width: 1023px) {
+header {
+    padding: 20px;
+}
+
+.hero {
+    margin-bottom: 100px;
+}
+
+    .hero-text h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-text p {
+        font-size: 1.1rem;
+    }
+
+    .email-form input[type="email"] {
+        width: 250px;
+    }
+
+.trending {
+    padding: 20px 40px;
+}
+
+    .trending-list {
+        gap: 10px;
+        justify-content: space-between;
+    }
+
+        .trending-list li {
+            flex: 1;
+            max-width: calc((100% - 40px) / 5);
+        }
+
+            .trending-list li img {
+                width: 100%;
+                height: auto;
+            }
+
+            .trending-wrapper .next-btn {
+                display: block;
+            }
+
+.reason-cards {
+    justify-content: center;
+}
+}
+
+@media screen and (max-width: 480px) {
+header {
+    flex-direction: column;
+    padding: 10px;
+}
+
+    .header-interact {
+        margin-top: 10px;
+    }
+
+    .logo {
+        width: 150px;
+    }
+
+.hero {
+    min-height: 60vh;
+    margin-bottom: 50px;
+}
+
+    .hero-text h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero-text p {
+        font-size: 1rem;
+    }
+
+    .email-form input[type="email"] {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .email-form a {
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    .trending {
+        padding: 20px 40px;
+    }
+
+    .trending-wrapper {
+        gap: 10px;
+        overflow-x: auto;
+    }
+
+    .trending-list {
+        gap: 10px;
+    }
+
+        .trending-list li img {
+            width: 120px;
+        }
+
+        .trending-wrapper .next-btn {
+            display: none;
+        }
+
+.reasons-to-join {
+    padding: 10px;
+}
+
+footer {
+    padding: 20px;
+}
+
+    footer .email-form input[type="email"] {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .reasons-to-join.container {
+        max-width: none;       
+        margin: 0 auto;        
+        padding: 20px 40px; 
+    }
+
+        .reason-cards {
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .reason-cards li {
+            width: 100%;
+            max-width: none;
+            margin-bottom: 20px;
+        }
+}
