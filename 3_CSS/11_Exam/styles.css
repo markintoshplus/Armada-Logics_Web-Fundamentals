@@ -81,6 +81,7 @@ body {
             }
 
                 li a {
+                    display: flex;
                     font-size: 14px;
                     font-weight: normal;
                     color: rgb(58, 42, 47);
