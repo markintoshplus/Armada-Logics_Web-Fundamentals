@@ -1,0 +1,260 @@
+html {
+    min-width: 1000px;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Buttons */
+.signup-btn, .login-btn, .explore-btn, .supercharge-btn, .careers-btn, .advertising-btn, .api-btn {
+    border: 1px solid #1B75D0;
+    background-color: #1B75D0;
+    color: white;
+    display: inline-block;
+    border-radius: 6px;
+    font-size: 14px;
+    text-decoration: none;
+    text-align: center;
+    min-width: 60px;
+    height: auto;
+    padding: 6px 4px;
+}
+
+.login-btn {
+    background-color: white;
+    color: #1B75D0;
+}
+
+    /* Header and Navigation */
+    header, nav {
+        height: 50px;
+    }
+
+    header {
+        margin: 0;
+        border-bottom: 1px solid rgb(214, 217, 220);
+        border-top: 3px solid #E7700D;
+    }
+
+        nav, .nav-links{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        nav {
+            margin: auto 300px;
+            gap: 5px;
+        }
+
+            .logo {
+                width: 150px;
+                height: 30px;
+                padding: 0;
+            }
+
+            nav .nav-links {
+                list-style: none;
+                gap: 30px;
+                padding: 0 15px 0 20px;
+            }
+
+                .nav-links li a {
+                    font-size: 14px;
+                    text-decoration: none;
+                    color: #6E757D;
+                }
+
+            nav .search {
+                flex-grow: 1;
+                border: 1px solid #BABFC5;
+                border-radius: 6px;
+                padding-left: 30px;
+                height: 32px;
+            }
+
+    /* Sidebar */
+    aside {
+        float: left;
+        margin-left: 250px;
+        margin-right: 80px;
+    }
+
+        aside .side-nav-links{
+            list-style: none;
+            padding-top: 20px;
+        }
+
+            .side-nav-links li {
+                padding: 10px;
+            }
+
+            .side-nav-links li:nth-child(3), .side-nav-links li:nth-child(5) {
+                margin-bottom: 15px;
+            }
+
+            .side-nav-links .labs {
+                font-weight: bold;
+                font-size: 12px;
+                text-transform: uppercase;
+            }
+
+                .side-nav-links li a {
+                    color: rgb(59, 64, 69);
+                    display: flex;
+                    font-size: 14px;
+                    text-decoration: none;
+                    gap: 5px;
+                }
+
+    /* Main Content*/
+    main {
+        display: flex;
+        flex-direction: column;
+        max-width: 1130px;
+    }
+
+        main .hero {
+            background: #F9FAFA url(assets/illo-home-hero.png) no-repeat right bottom / 40%;
+            background-position-x: 90%;
+            background-position-y: bottom;
+            border-radius: 0px 0px 10px 10px;
+            padding: 20px 50px 40px 50px;
+
+        }
+
+            .hero h1 {
+                font-size: 36px;
+                font-family: "Roboto Slab", serif;
+                color: #3C4146;
+                max-width: 500px;
+                margin: 30px 0 10px;
+            }
+
+                h1 .highlight {
+                    display: inline-block;
+                    background: url(assets/background-image.png) no-repeat center / contain;
+                    padding: 0 20px;
+                    color: #F9FAFA;
+                }
+            
+            .hero p {
+                max-width: 550px;
+                font-size: 18px;
+                padding-bottom: 10px;
+            }
+
+            .hero .signup-btn {
+                padding: 10px;
+            }
+
+            .hero .visit-lnk, .services .try-lnk {
+                color: #1B75D0;
+                font-size: 14px;
+                padding-left: 10px;
+                text-decoration: none;
+            }
+
+        /* Services */
+        main .services {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+            .services h2 {
+                font-weight: normal;
+                font-size: 20px;
+                margin: 50px 0 0;
+            }
+
+            .services .for-teams, .overflow-ai, .advertising, .overflow-api{
+                border: 1px solid rgb(214, 217, 220);
+                border-radius: 10px;
+                padding: 35px;
+            }
+
+            .services .for-teams, .overflow-ai {
+                background-repeat: no-repeat;
+                background-size: 43%;
+                background-position: right bottom;
+            }
+
+            .services .for-teams {
+                background-image: url(assets/home-teams.png);
+            }
+
+            .services .for-teams .teams-logo,
+            .overflow-ai .overflow-ai-logo,
+            .advertising .advertising-logo,
+            .overflow-api .api-logo {
+                width: 160px;
+                height: auto;
+            }
+
+                .services .for-teams p, .overflow-ai p, .advertising p, .overflow-api p {
+                    font-size: 18px;
+                    max-width: 500px;
+                }
+                
+            .services .overflow-ai {
+                color: #F9FAFA;
+                background-color: #3C4146;
+                background-image: url(assets/home-overflowai.png);
+            }
+
+                .services .overflow-ai p .emphasis {
+                    font-weight: bold;
+                }
+
+                .services .overflow-ai .supercharge-btn {
+                    background-color: #E7700D;
+                    border: none;
+                    padding: 6px 14px;
+                }
+            
+            .services .advertising-overflowapi-container {
+                display: flex;
+                gap: 25px;
+            }
+
+            .explore-btn, .advertising-btn, .api-btn {
+                padding: 6px 14px;
+            }
+        
+        /* Careers Section */
+        main .work-here {
+            margin-bottom: 50px;
+        }
+
+            .work-here h2 {
+                font-weight: normal;
+                font-size: 20px;
+                margin: 50px 0 30px;
+            }
+
+            .work-here .join-mission {
+                position: relative;
+                border: 1px solid rgb(214, 217, 220);
+                border-radius: 10px;
+                padding: 35px;
+            }
+            
+                .work-here .join-mission p {
+                    font-size: 18px;
+                    max-width: 500px;
+                }
+
+                .work-here .join-mission .careers-btn {
+                    padding: 6px 14px;
+                }
+
+            .work-here .overflow-img {
+                position: absolute;
+                top: -90px;
+                right: 10px;
+                width: 600px;
+            }
