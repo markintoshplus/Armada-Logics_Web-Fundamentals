@@ -1,14 +1,14 @@
-html {
-    min-width: 1000px;
-}
-
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
 }
 
-/* Buttons */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 .signup-btn, .login-btn, .explore-btn, .supercharge-btn, .careers-btn, .advertising-btn, .api-btn {
     border: 1px solid #1B75D0;
     background-color: #1B75D0;
@@ -19,8 +19,8 @@ body {
     text-decoration: none;
     text-align: center;
     min-width: 60px;
-    height: auto;
     padding: 6px 4px;
+    margin: 5px;
 }
 
 .login-btn {
@@ -28,24 +28,17 @@ body {
     color: #1B75D0;
 }
 
-    /* Header and Navigation */
-    header, nav {
-        height: 50px;
-    }
-
     header {
         margin: 0;
         border-bottom: 1px solid rgb(214, 217, 220);
         border-top: 3px solid #E7700D;
+        padding: 10px;
     }
 
-        nav, .nav-links{
+        nav {
             display: flex;
             align-items: center;
             justify-content: center;
-        }
-
-        nav {
             margin: auto 300px;
             gap: 5px;
         }
@@ -53,11 +46,11 @@ body {
             .logo {
                 width: 150px;
                 height: 30px;
-                padding: 0;
             }
 
-            nav .nav-links {
+            .nav-links {
                 list-style: none;
+                display: flex;
                 gap: 30px;
                 padding: 0 15px 0 20px;
             }
@@ -68,7 +61,7 @@ body {
                     color: #6E757D;
                 }
 
-            nav .search {
+            .search {
                 flex-grow: 1;
                 border: 1px solid #BABFC5;
                 border-radius: 6px;
@@ -76,14 +69,16 @@ body {
                 height: 32px;
             }
 
-    /* Sidebar */
-    aside {
-        float: left;
-        margin-left: 250px;
-        margin-right: 80px;
+    .main-container {
+        display: flex;
     }
 
-        aside .side-nav-links{
+    aside {
+        flex: 0 0 10%;
+        margin: 0 1% 0 10%;
+    }
+
+        .side-nav-links{
             list-style: none;
             padding-top: 20px;
         }
@@ -110,23 +105,27 @@ body {
                     gap: 5px;
                 }
 
-    /* Main Content*/
     main {
+        flex: 1;
         display: flex;
         flex-direction: column;
         max-width: 1130px;
+        margin: 0 50px 0 30px;
     }
 
-        main .hero {
-            background: #F9FAFA url(assets/illo-home-hero.png) no-repeat right bottom / 40%;
-            background-position-x: 90%;
-            background-position-y: bottom;
-            border-radius: 0px 0px 10px 10px;
+        .hero {
+            position: relative;    
+            padding: 20px 50px;
             padding: 20px 50px 40px 50px;
-
+            background-color: #F9FAFA;    
+            border-radius: 0 0 10px 10px;
         }
 
-            .hero h1 {
+            .hero-content {
+                max-width: 500px;        
+            }
+
+            h1 {
                 font-size: 36px;
                 font-family: "Roboto Slab", serif;
                 color: #3C4146;
@@ -134,14 +133,14 @@ body {
                 margin: 30px 0 10px;
             }
 
-                h1 .highlight {
+                .highlight {
                     display: inline-block;
-                    background: url(assets/background-image.png) no-repeat center / contain;
+                    background: url(assets/background-image.png) no-repeat center/contain;
                     padding: 0 20px;
                     color: #F9FAFA;
                 }
             
-            .hero p {
+            p {
                 max-width: 550px;
                 font-size: 18px;
                 padding-bottom: 10px;
@@ -151,43 +150,61 @@ body {
                 padding: 10px;
             }
 
-            .hero .visit-lnk, .services .try-lnk {
+            .visit-lnk, .try-lnk {
                 color: #1B75D0;
                 font-size: 14px;
                 padding-left: 10px;
                 text-decoration: none;
             }
 
-        /* Services */
+            .hero-img {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+            }
+
+                .hero-img img {
+                    max-width: 100%;
+                    width: 550px;
+                    height: auto;
+                    display: block;
+                }
+
         main .services {
             display: flex;
             flex-direction: column;
             gap: 30px;
         }
 
-            .services h2 {
+            h2 {
                 font-weight: normal;
                 font-size: 20px;
                 margin: 50px 0 0;
             }
 
-            .services .for-teams, .overflow-ai, .advertising, .overflow-api{
+            .for-teams, .overflow-ai, .advertising, .overflow-api{
+                position: relative;
                 border: 1px solid rgb(214, 217, 220);
                 border-radius: 10px;
                 padding: 35px;
+                margin-bottom: 20px;
             }
 
-            .services .for-teams, .overflow-ai {
-                background-repeat: no-repeat;
-                background-size: 43%;
-                background-position: right bottom;
+            .for-teams-img,
+            .overflow-ai-img {
+                position: absolute;
+                bottom: 0;
+                right: 0;
             }
 
-            .services .for-teams {
-                background-image: url(assets/home-teams.png);
+            .for-teams-img img,
+            .overflow-ai-img img {
+                display: block;
+                max-width: 500px;
+                height: auto;
             }
 
-            .services .for-teams .teams-logo,
+            .for-teams .teams-logo,
             .overflow-ai .overflow-ai-logo,
             .advertising .advertising-logo,
             .overflow-api .api-logo {
@@ -195,28 +212,27 @@ body {
                 height: auto;
             }
 
-                .services .for-teams p, .overflow-ai p, .advertising p, .overflow-api p {
+                .for-teams p, .overflow-ai p, .advertising p, .overflow-api p {
                     font-size: 18px;
                     max-width: 500px;
                 }
                 
-            .services .overflow-ai {
+            .overflow-ai {
                 color: #F9FAFA;
                 background-color: #3C4146;
-                background-image: url(assets/home-overflowai.png);
             }
 
-                .services .overflow-ai p .emphasis {
+                .overflow-ai p .emphasis {
                     font-weight: bold;
                 }
 
-                .services .overflow-ai .supercharge-btn {
+                .overflow-ai .supercharge-btn {
                     background-color: #E7700D;
                     border: none;
                     padding: 6px 14px;
                 }
             
-            .services .advertising-overflowapi-container {
+            .advertising-overflowapi-container {
                 display: flex;
                 gap: 25px;
             }
@@ -224,8 +240,7 @@ body {
             .explore-btn, .advertising-btn, .api-btn {
                 padding: 6px 14px;
             }
-        
-        /* Careers Section */
+
         main .work-here {
             margin-bottom: 50px;
         }
@@ -254,7 +269,190 @@ body {
 
             .work-here .overflow-img {
                 position: absolute;
-                top: -90px;
+                bottom: 0;
                 right: 10px;
                 width: 600px;
             }
+
+@media (max-width: 1023px) and (min-width: 481px) {
+.nav-links li:nth-child(1),
+.nav-links li:nth-child(3) {
+    display: none;
+}
+    
+aside {
+    margin-left: 0;
+    margin-right: 2%;
+}
+    .side-nav-links {
+        padding: 0;
+    }
+
+main .services h2 {
+    text-align: center;
+}
+
+    .hero {
+        position: static;      
+        display: flex;          
+        flex-direction: column;
+        align-items: flex-start;  
+        padding: 20px;           
+        border-radius: 0 0 10px 10px;
+        background-color: #F9FAFA;
+        padding-bottom: 0;
+    }
+
+        .hero-content {
+            max-width: 100%;      
+        }
+
+        .hero-img {
+            position: static;       
+            margin-top: 20px;       
+            align-self: center;
+        }
+
+            .hero-img img {
+                width: 100%;             
+                max-width: 100%px;         
+                height: auto;
+                display: block;
+            }
+    
+    .for-teams, .overflow-ai {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 0;
+    }
+
+        .for-teams-img, .overflow-ai-img {
+            position: static;  
+            margin-top: 20px;     
+            text-align: center;   
+        }
+
+            .for-teams-img img,
+            .overflow-ai-img img {
+                max-width: 100%;     
+                width: auto;        
+            }
+
+    .advertising-overflowapi-container {
+        display: flex;
+        flex-direction: column;  
+        gap: 20px;              
+    }
+
+    .work-here {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+nav {
+    flex-direction: column;
+    margin: 0;
+    padding: 0 10px;
+}
+
+    .nav-links {
+        gap: 10px;
+        padding: 10px 0;
+    }
+
+    .search {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+.main-container {
+    flex-direction: column;
+}
+
+    aside {
+        order: -1;        
+        flex: none;      
+        width: 100%;
+        margin: 0;
+    }
+
+        .side-nav-links {
+            padding: 10px;
+        }
+
+    main {
+        margin: 0 30px;
+    }
+
+        .hero {
+            position: static;     
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 20px 15px;     
+            border-radius: 0 0 10px 10px;
+            background-color: #F9FAFA;
+        }
+
+            .hero-content {
+                max-width: 100%;
+            }
+
+                .hero-content h1 {
+                    font-size: 28px;
+                    margin: 20px 0 10px;
+                }
+                .hero-content p {
+                    font-size: 16px;
+                }
+
+            .hero-img {
+                position: static;      
+                margin-top: 20px;
+                align-self: center;    
+            }
+
+                .hero-img img {
+                    width: 100%;
+                    max-width: 100%;
+                    height: auto;
+                }
+
+        .for-teams, .overflow-ai, .advertising, .overflow-api {
+            position: static; 
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+            .for-teams-img, .overflow-ai-img {
+                position: static;
+                margin-top: 20px;
+                text-align: center;
+            }
+
+                .for-teams-img img,
+                .overflow-ai-img img {
+                    max-width: 100%;
+                    width: auto;
+                }
+
+        .advertising-overflowapi-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .work-here {
+            display: none;
+        }
+
+.signup-btn, .login-btn, .explore-btn, .supercharge-btn, 
+.careers-btn, .advertising-btn, .api-btn {
+    font-size: 12px;
+    padding: 6px 8px;
+}
+}
+

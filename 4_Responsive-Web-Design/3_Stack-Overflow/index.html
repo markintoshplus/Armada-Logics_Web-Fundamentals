@@ -27,88 +27,113 @@
         </nav>
     </header>
 
-    <aside>
-        <ul class="side-nav-links">
-            <li>
-                <a href="#"><img src="assets/icons/home.png" alt="Home Icon">Home</a>
-            </li>
-            <li>
-                <a href="#"><img src="assets/icons/questions.png" alt="Questions Icon">Questions</a>
-            </li>
-            <li>
-                <a href="#"><img src="assets/icons/tags.png" alt="Tags Icon">Tags</a>
-            </li>
+    <div class="main-container">
+        <aside>
+            <ul class="side-nav-links">
+                <li>
+                    <a href="#"><img src="assets/icons/home.png" alt="Home Icon">Home</a>
+                </li>
+                <li>
+                    <a href="#"><img src="assets/icons/questions.png" alt="Questions Icon">Questions</a>
+                </li>
+                <li>
+                    <a href="#"><img src="assets/icons/tags.png" alt="Tags Icon">Tags</a>
+                </li>
+    
+                <li>
+                    <a href="#"><img src="assets/icons/users.png" alt="Users Icon">Users</a>
+                </li>
+                <li>
+                    <a href="#"><img src="assets/icons/companies.png" alt="Companies Icon">Companies</a>
+                </li>
+    
+                <li class="labs">LABS</li>
+                <li>
+                    <a href="#"><img src="assets/icons/discussions.png" alt="Discussions Icon">Discussions</a>
+                </li>
+            </ul>
+        </aside>
 
-            <li>
-                <a href="#"><img src="assets/icons/users.png" alt="Users Icon">Users</a>
-            </li>
-            <li>
-                <a href="#"><img src="assets/icons/companies.png" alt="Companies Icon">Companies</a>
-            </li>
-
-            <li class="labs">LABS</li>
-            <li>
-                <a href="#"><img src="assets/icons/discussions.png" alt="Discussions Icon">Discussions</a>
-            </li>
-        </ul>
-    </aside>
-
-    <main>
-        <section class="hero">
-            <h1>Every <span class="highlight">developer</span> has a tab open to Stack Overflow.</h1>
-            <p>For over 15 years we've been the Q&A platform of choice that millions of people visit every month to ask questions,
-                learn, and share technical knowledge.</p>
-            <a class="signup-btn" href="#">Sign Up</a>
-            <a class="visit-lnk" href="#">Visit the community</a>
-        </section>
-
-        <section class="services">
-            <h2>Services for companies of all shapes & sizes</h2>
-            <div class="for-teams">
-                <img class="teams-logo" src="assets/teams-logo.png" alt="StackOverflow for Teams Logo">
-                <p>Where developers and technologists share private knowledge with coworkers.</p>
-                <a class="explore-btn" href="#">Explore Teams</a>
-                <a class="try-lnk" href="#">Try for free</a>
-            </div>
-            <div class="overflow-ai">
-                <img class="overflow-ai-logo" src="assets/overflow-ai-logo.png" alt="Overflow AI Logo">
-                <p><span class="emphasis">Now available!</span> A suite of GenAI tools for Stack Overflow for Teams that helps connect employees to
-                    knowledge faster.</p>
-                <a class="supercharge-btn" href="#">Supercharge your Team
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" role="img"
-                    viewBox="0 0 24 24" width="14" height="14" data-icon="ChevronRightStandard"
-                    aria-hidden="true">
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M15.5859 12L8.29303 19.2928L9.70725 20.7071L17.7072 12.7071C17.8948 12.5195 18.0001 12.2652 18.0001 12C18.0001 11.7347 17.8948 11.4804 17.7072 11.2928L9.70724 3.29285L8.29303 4.70706L15.5859 12Z"
-                        fill="currentColor"></path>
-                    </svg>
-                </a>
-            </div>
-            <div class="advertising-overflowapi-container">
-                <div class="advertising">
-                    <img class="advertising-logo" src="assets/soa-logo.png" alt="Stack Overflow Advertising Logo">
-                    <p>Reach the world's largest audience of developers and technologists.</p>
-                    <a class="advertising-btn" href="#">Advertising solutions</a>
+        <main>
+            <section class="hero">
+                <div class="hero-content">
+                    <h1>Every <span class="highlight">developer</span> has a tab open to Stack Overflow.</h1>
+                    <p>For over 15 years we've been the Q&A platform of choice that millions of people visit every month to ask questions,
+                        learn, and share technical knowledge.</p>
+                    <a class="signup-btn" href="#">Sign Up</a>
+                    <a class="visit-lnk" href="#">Visit the community</a>
                 </div>
-                <div class="overflow-api">
-                    <img class="api-logo" src="assets/api-logo.png" alt="Overflow API Logo">
-                    <p>A subscription-based API service that provides continuous access to Stack Overflow's public dataset
-                        to train and fine-tune large language models.</p>
-                    <a class="api-btn" href="#">API solutions for business</a>
+                
+                <div class="hero-img">
+                    <img src="assets/illo-home-hero.png" alt="Hero Illustration">
                 </div>
-            </div>
-        </section>
+            </section>
+    
+            <section class="services">
+                <h2>Services for companies of all shapes & sizes</h2>
+                <div class="for-teams">
+                    <div class="for-teams-content">
+                        <img class="teams-logo" src="assets/teams-logo.png" alt="StackOverflow for Teams Logo">
+                        <p>Where developers and technologists share private knowledge with coworkers.</p>
+                        <a class="explore-btn" href="#">Explore Teams</a>
+                        <a class="try-lnk" href="#">Try for free</a>
+                    </div>
+                    
+                    <div class="for-teams-img">
+                        <img src="assets/home-teams.png" alt="Teams Illustration">
+                    </div>
+                </div>
+                <div class="overflow-ai">
+                    <div class="overflow-ai-content">
+                        <img class="overflow-ai-logo" src="assets/overflow-ai-logo.png" alt="Overflow AI Logo">
+                        <p><span class="emphasis">Now available!</span> A suite of GenAI tools for Stack Overflow for Teams that helps connect employees to
+                            knowledge faster.</p>
+                        <a class="supercharge-btn" href="#">Supercharge your Team
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" role="img"
+                            viewBox="0 0 24 24" width="14" height="14" data-icon="ChevronRightStandard"
+                            aria-hidden="true">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M15.5859 12L8.29303 19.2928L9.70725 20.7071L17.7072 12.7071C17.8948 12.5195 18.0001 12.2652 18.0001 12C18.0001 11.7347 17.8948 11.4804 17.7072 11.2928L9.70724 3.29285L8.29303 4.70706L15.5859 12Z"
+                                fill="currentColor"></path>
+                            </svg>
+                        </a>
+                    </div>
 
-        <section class="work-here">
-            <h2>Work here</h2>
-            <div class="join-mission">
-                <img class="logo" src="assets/logo-stackoverflow.png" alt="StackOverflow Logo">
-                <p>Join our mission to help empower the world to develop technoogy through collective knowledge.</p>
-                <a class="careers-btn" href="#">Careers at Stack Overflow</a>
-                <img class="overflow-img" src="assets/illo-home-careers.png" alt="Illustration">  
-            </div>
-        </section>
-    </main>
+                    <div class="overflow-ai-img">
+                        <img src="assets/home-overflowai.png" alt="Overflow AI Illustration">
+                    </div>
+                </div>
+                <div class="advertising-overflowapi-container">
+                    <div class="advertising">
+                        <img class="advertising-logo" src="assets/soa-logo.png" alt="Stack Overflow Advertising Logo">
+                        <p>Reach the world's largest audience of developers and technologists.</p>
+                        <a class="advertising-btn" href="#">Advertising solutions</a>
+                    </div>
+                    <div class="overflow-api">
+                        <img class="api-logo" src="assets/api-logo.png" alt="Overflow API Logo">
+                        <p>A subscription-based API service that provides continuous access to Stack Overflow's public dataset
+                            to train and fine-tune large language models.</p>
+                        <a class="api-btn" href="#">API solutions for business</a>
+                    </div>
+                </div>
+            </section>
+    
+            <section class="work-here">
+                <h2>Work here</h2>
+                <div class="join-mission">
+                    <div class="join-mission-content">
+                        <img class="logo" src="assets/logo-stackoverflow.png" alt="StackOverflow Logo">
+                        <p>Join our mission to help empower the world to develop technoogy through collective knowledge.</p>
+                        <a class="careers-btn" href="#">Careers at Stack Overflow</a> 
+                    </div>
+
+                    <div class="join-misison-img">
+                        <img class="overflow-img" src="assets/illo-home-careers.png" alt="Illustration"> 
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
 </body>
 
 </html>
