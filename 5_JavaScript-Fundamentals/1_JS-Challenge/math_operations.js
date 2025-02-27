@@ -32,3 +32,5 @@ let finalPrice = 80;
 let discountPercentage = 20;
 let originalPrice = finalPrice / (1 - discountPercentage / 100);
 console.log("The original price before the discount was: $" + originalPrice);
+
+// Estimated Time of Completion: 30 mins
