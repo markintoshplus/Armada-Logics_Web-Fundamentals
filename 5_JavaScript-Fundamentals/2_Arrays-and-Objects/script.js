@@ -10,8 +10,7 @@ let book = {
 console.log(book.title);
 console.log(book["author"]);
 console.log(book.pages);
-console.log(book["pages"]);
-console.log(book.isRead);
+console.log(book["isRead"]);
 
 book.isRead = true;
 console.log(book.isRead);
