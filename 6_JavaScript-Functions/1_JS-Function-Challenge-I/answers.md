@@ -1,3 +1,4 @@
+[Github Link](https://github.com/markintoshplus/Armada-Logics_Web-Fundamentals/blob/master/6_JavaScript-Functions/1_JS-Function-Challenge-I/answers.md "Github Link")
 
 ---
 # Challenge 1
