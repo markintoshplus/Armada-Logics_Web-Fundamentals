@@ -1,3 +1,5 @@
+[Github Link](https://github.com/markintoshplus/Armada-Logics_Web-Fundamentals/blob/master/6_JavaScript-Functions/2_JS-Function-Challenge-II/answers.md "Github Link")
+*Estimated Time of Completion: 1 hr*
 
 ---
 # Challenge 1
