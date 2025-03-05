@@ -89,6 +89,8 @@ function generateMultipleCharacters(x) {
 // character1.battle(character2);
 // character2.battle(character1);
 
-// Generate an array of 5 random characters.
-const party = generateMultipleCharacters(5);
-console.dir(party);
+// // Generate an array of 5 random characters.
+// const party = generateMultipleCharacters(5);
+// console.dir(party);
+
+// Estimated Time of Completion: 2.5 hrs
