@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Dynamic Profile Card Editor</title>
+</head>
+
+<body>
+    <main>
+        <section class="profile-card">
+            <img id="profile-image" src="https://picsum.photos/150?random=1" alt="Profile Picture">
+            <h2 id="profile-name">Mark Cedrick T. De Vera</h2>
+            <p id="profile-bio">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        </section>
+
+        <section class="edit-profile">
+            <form class="input-section">
+                <label for="name-input">Update Name: </label>
+                <input type="text" id="name-input" placeholder="Enter new name" />
+                <button onclick="updateName()">Update Name</button>
+            </form>
+
+            <form class="input-section">
+                <label for="bio-input">Update Bio: </label>
+                <input type="text" id="bio-input" placeholder="Enter new bio" />
+                <button onclick="updateBio()">Update Bio</button>
+            </form>
+
+            <form class="input-section">
+                <label for="image-input">Update Image URL: </label>
+                <input type="text" id="image-input" placeholder="Enter new image URL" />
+                <button onclick="updateImage()">Update Image</button>
+            </form>
+
+            <form class="input-section">
+                <label for="bg-color-input">Change Background Color: </label>
+                <input type="color" id="bg-color-input" />
+                <button onclick="updateBackgroundColor()">Update Background Color</button>
+            </form>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
