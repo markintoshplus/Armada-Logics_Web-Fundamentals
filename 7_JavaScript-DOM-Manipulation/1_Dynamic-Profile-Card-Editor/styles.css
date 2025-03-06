@@ -1,20 +1,128 @@
-main {
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
 
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
 }
 
-    .profile-card {
-        width: 300px;
+.container {
+    max-width: 900px;
+    background: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Adding gaps between each form */
+.edit-profile form {
+    margin-bottom: 20px;
+}
+
+.profile-card {
+    text-align: center;
+    padding: 30px;
+    border-radius: 15px;
+    background: #ffffff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.profile-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #007bff;
+}
+
+.profile-card h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 15px;
+    color: #333;
+}
+
+.profile-card p {
+    font-size: 16px;
+    color: #555;
+    margin-top: 8px;
+}
+
+.card {
+    padding: 20px;
+    border-radius: 10px;
+    background: #f8f9fa;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+#edit-card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-label {
+    font-weight: 500;
+    color: #444;
+}
+
+.form-control {
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.btn {
+    font-size: 14px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    color: white;
+}
+
+.btn-primary {
+    background: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background: #0056b3;
+    border-color: #0056b3;
+}
+
+.form-control-color {
+    width: 50px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+}
+
+#edit-background {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
         padding: 20px;
-        border-radius: 8px;
-        box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        margin-bottom: 20px;
     }
 
-        #profile-image {
-            width: 100%;
-            height: auto;
-            border-radius: 50%;
-        }
+    .profile-card img {
+        width: 120px;
+        height: 120px;
+    }
 
-        
+    .profile-card h2 {
+        font-size: 20px;
+    }
 
+    .profile-card p {
+        font-size: 14px;
+    }
+}
