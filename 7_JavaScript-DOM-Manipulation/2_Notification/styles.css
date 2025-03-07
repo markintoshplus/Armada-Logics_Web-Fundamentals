@@ -1,0 +1,65 @@
+/* Overall body styling */
+body {
+    background: linear-gradient(135deg, #e2eafc, #cfd9df);
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+    /* Container styling */
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 2rem;
+    }
+
+        #show-notification-btn {
+            display: block;
+            margin: 0 auto;
+            font-size: 1.1rem;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            transition: background-color 0.3s ease;
+        }
+
+        #show-notification-btn:hover {
+            background-color: #0056b3;
+        }
+
+            /* Notification container: fixed position in the top-right corner */
+            #notification-container {
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                width: 300px;
+                z-index: 1050;
+            }
+
+                /* Notification (alert) styling */
+                .alert {
+                    display: flex;
+                    justify-content: space-between;
+                    border-radius: 8px;
+                    padding: 1rem;
+                    margin-bottom: 1rem;
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                    font-size: 1rem;
+                }
+
+                    .alert .btn-close-custom {
+                        border: none;
+                        background: transparent;
+                        padding: 0;
+                        cursor: pointer;
+                    }
+
+                        .close-icon {
+                            width: 20px;
+                            height: 20px;
+                            transition: opacity 0.3s ease;
+                        }
+
+                        .btn-close-custom:hover .close-icon {
+                            opacity: 0.8;
+                        }
