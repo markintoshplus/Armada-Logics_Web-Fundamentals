@@ -1,0 +1,10 @@
+1. Click a color button. What happens?
+When you click a color button (with event.stopPropagation() commented out), two things occur:
+- First, the button’s click event fires, which changes the container’s background color to that button’s color and shows an alert (e.g., "You clicked the Red button!").
+- Then, because the event bubbles up (since propagation isn’t stopped), the container’s click event also fires. This displays an alert ("You clicked the container!") and resets the background color back to lightgray.
+
+2. Uncomment event.stopPropagation() inside the button click handler. Click a color button again. What changed?
+With event.stopPropagation() uncommented, clicking a color button stops the event from bubbling up to the container. This means that only the button’s click event executes. The container’s event handler is not triggered, so the container’s background remains the color set by the button, and only the alert from the button ("You clicked the Red button!") appears.
+
+3. Explain in your own words why event.stopPropagation() is useful in this example.
+event.stopPropagation() is useful because it prevents the click event on a child element (the color button) from triggering the click event on its parent container. This isolation is important in this example because we only want the button’s action—changing the background to the button’s color—to occur without the container’s click handler resetting the background and showing an additional alert. It ensures that each element’s event handling remains independent and prevents unwanted side effects from event bubbling.
