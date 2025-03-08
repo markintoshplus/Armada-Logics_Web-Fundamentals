@@ -1,0 +1,26 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    transition: background-color 0.3s ease;
+}
+
+h1 {
+    margin: 0;
+}
+
+#jack-container {
+    display: inline-block;
+    position: relative;
+}
+
+#jack-img,
+#jack-video {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    cursor: pointer;
+}
+
+#toggle-btn {
+    margin-top: 20px;
+}
