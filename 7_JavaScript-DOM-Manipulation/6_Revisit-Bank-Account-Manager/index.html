@@ -29,6 +29,11 @@
                 <strong>Current Balance: $<span id="balance">1000</span></strong>
             </div>
 
+            <!-- Daily Limit Display -->
+            <div class="mb-3 text-center" id="withdraw-limit-status">
+                Daily withdrawal limit remaining: $<span id="limit-remaining">500</span>
+            </div>
+
             <!-- Input for transaction amount -->
             <div class="input-group mb-3">
                 <input type="number" class="form-control" id="transaction-amount" placeholder="Enter amount..."
@@ -43,6 +48,12 @@
 
             <!-- Feedback Message -->
             <div id="message" class="mt-3 text-center"></div>
+
+            <!-- Transaction History Section -->
+            <div id="transaction-history">
+                <div class="history-title">Transaction History</div>
+                <div id="history-list"></div>
+            </div>
         </div>
     </div>
 
@@ -52,9 +63,7 @@
         crossorigin="anonymous"></script>
 
     <!-- Custom JS -->
-    <script src="script.js" defer></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
-
-<!-- Estimated Time of Completion: 1.5 hrs-->
