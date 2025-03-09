@@ -1,0 +1,79 @@
+@font-face {
+    font-family: 'Minecraft';
+    src: url('assets/fonts/Minecraft.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Minecrafter';
+    src: url('assets/fonts/Minecrafter.Reg.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1 {
+    font-family: Minecrafter, sans-serif;
+}
+
+h2 {
+    font-family: Minecraft, sans-serif;
+    text-align: center;
+}
+
+body {
+    background: url("assets/minecraft-bg.webp") no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Layout for the armor selection images */
+.armor-selection {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+/* Thumbnails for each armor piece */
+.armor-option {
+    width: 60px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.armor-option:hover {
+    transform: scale(1.1);
+}
+
+/* Preview stack uses fixed-size containers instead of <img> tags */
+#armor-stack {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+}
+
+/* Each container has a fixed width/height and a border or background */
+.armor-slot {
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border: 3px dashed #ccc;
+}
+
+/* Highlight for selected armor */
+.selected-armor {
+    border: 3px dashed #f0ad4e !important;
+    box-shadow: 0 0 10px rgba(240, 173, 78, 0.5);
+}
+
+#save-btn {
+    font-family: Minecraft, sans-serif;
+    border-radius: 0%;
+    background-color: #367723;
+}
