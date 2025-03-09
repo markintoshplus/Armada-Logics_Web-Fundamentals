@@ -1,0 +1,109 @@
+@font-face {
+    font-family: 'Metropolis';
+    src: url('assets/font/Metropolis-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#selected-title,
+#selected-origin,
+#selected-style,
+#selected-description {
+    font-family: 'Metropolis', sans-serif;
+}
+
+body {
+    font-family: 'Bebas Neue', sans-serif;
+    background: url("assets/bg.jpg") no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+#tekken-logo {
+    max-height: 40px;
+    width: auto;
+}
+
+/* Main container overlay */
+#main-container {
+    max-width: 1800px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+/* Character thumbnails */
+.character-thumb {
+    background-color: transparent;
+    width: 80px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    margin: 5px;
+    padding: 0;
+    border: none;
+}
+
+.character-thumb:hover {
+    transform: scale(1.05);
+}
+
+/* Selected character details styling */
+.selected-character {
+    border: 3px solid #f0ad4e !important;
+    box-shadow: 0 0 10px rgba(240, 173, 78, 0.5);
+}
+
+#selected-image {
+    max-width: auto;
+    max-height: 300px;
+}
+
+#selected-name {
+    font-size: 3rem;
+    margin-top: 10px;
+    color: #DD1D5B;
+}
+
+#selected-title {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#selected-origin,
+#selected-style {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+#selected-description {
+    font-size: 1rem;
+    text-align: left;
+    line-height: 1.4;
+    max-height: 150px;
+    overflow-y: auto;
+}
+
+@media (max-width: 768px) {
+    #selected-name {
+        font-size: 1.8rem;
+    }
+
+    #selected-title {
+        font-size: 1.5rem;
+    }
+
+    #selected-origin,
+    #selected-style,
+    #selected-description {
+        font-size: 1rem;
+    }
+
+    .fs-3 {
+        font-size: 2rem;
+    }
+}
